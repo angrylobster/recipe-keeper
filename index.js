@@ -5,6 +5,8 @@ const app = express();
 const methodOverride = require('method-override')
 const reactEngine = require('express-react-views').createEngine();
 
+const test = 42;
+
 app.use(express.static(__dirname + '/public/'));
 app.use(express.json());
 app.use(express.urlencoded({
